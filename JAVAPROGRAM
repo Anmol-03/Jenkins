@@ -1,0 +1,5 @@
+For jenkins installation install the war file and in cmd 
+java -jar C:\Users\anmol\Downloads\jenkins.war
+then note the admin password 
+write localhost:8080
+Rest refer ayushs1214github
