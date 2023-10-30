@@ -1,0 +1,41 @@
+Pipeline process
+Create 4 projects SampleBuildJob,SampleDeployJob,SampleTestJob and SampleReleaseJob
+in each take build steps as execute shell
+date
+echo "Build Job Successfully Done "   // (apna respective process)
+Now add upstream and downstream jobs -> configure 
+Goto Build Triggers -> build after other projects are build 
+
+
+// Scripted Pipeline 
+1)Install the pluggin pipeline if not available 
+2)Create the project with pipeline
+3)Pipeline defination  ->Pipeline script
+node {
+        stage('Build')
+        {
+            echo "Building the Project..."
+        }
+        
+         stage('Test')
+        {
+            echo "Testing the Project..."
+        }
+        
+         stage('Deploy')
+        {
+            echo "Deploying the Project..."
+        }
+
+         stage('Build')
+        {
+            echo "Release the Project..."
+        }
+}
+// Declarative Pipeline
+
+
+
+
+
+
